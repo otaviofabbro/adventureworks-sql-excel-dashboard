@@ -1,2 +1,148 @@
-# adventureworks-sql-excel-dashboard
-Projeto de integração SQL SERVER e Excel. Criação de um dashboard com KPIs utilizando o Banco de Dados "AdventureWorksDW2025" da Microsoft.
+# 📊 AdventureWorks Internet Sales Dashboard — SQL Server + Excel
+
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
+![Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
+![Power Query](https://img.shields.io/badge/Power_Query-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![T-SQL](https://img.shields.io/badge/T--SQL-4479A1?style=for-the-badge&logo=sqlite&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)
+![Status](https://img.shields.io/badge/status-conclu%C3%ADdo-brightgreen?style=for-the-badge)
+
+> Projeto de análise de dados ponta a ponta: extração de KPIs de vendas via **T-SQL** no banco **AdventureWorks** e construção de um **dashboard interativo no Excel**, conectado diretamente ao SQL Server via Power Query.
+
+🔗 **[Ver Dashboard Interativo](#)**
+
+---
+
+## 📑 Sumário
+
+- [Sobre o Projeto](#-sobre-o-projeto)
+- [KPIs Desenvolvidos](#-kpis-desenvolvidos)
+- [Preview do Dashboard](#️-preview-do-dashboard)
+- [Tecnologias Utilizadas](#️-tecnologias-utilizadas)
+- [Estrutura do Repositório](#-estrutura-do-repositório)
+- [Como Reproduzir](#️-como-reproduzir)
+- [Dashboard Interativo](#-dashboard-interativo)
+- [Principais Insights](#-principais-insights)
+- [Autor](#-autor)
+
+---
+
+## 📌 Sobre o Projeto
+
+Este projeto simula um cenário real de análise de negócio para uma empresa de varejo online, utilizando o banco de dados de exemplo **AdventureWorks** (Microsoft). O objetivo foi transformar dados brutos de vendas do canal *Internet Sales* em indicadores de negócio (KPIs) claros e acionáveis, apresentados em um dashboard interativo no Excel.
+
+O fluxo do projeto segue uma pipeline típica de BI:
+
+**SQL Server (extração e modelagem)** → **T-SQL (cálculo dos KPIs)** → **Power Query (conexão)** → **Excel (visualização e dashboard)**
+
+### 🎯 Objetivo
+
+Praticar e demonstrar habilidades essenciais de análise de dados:
+- Escrita de consultas SQL para responder perguntas de negócio específicas
+- Modelagem de indicadores (KPIs) relevantes para times comerciais
+- Conexão de fontes de dados relacionais ao Excel via Power Query
+- Construção de dashboards claros, visuais e de fácil leitura
+
+---
+
+## 📈 KPIs Desenvolvidos
+
+| # | KPI | Pergunta de Negócio Respondida |
+|---|-----|----------------------------------|
+| 1 | **Total de Vendas Internet por Categoria** | Quais categorias de produto mais vendem no canal online? |
+| 2 | **Receita Total Internet por Mês do Pedido** | Como a receita evolui ao longo do tempo? Há sazonalidade? |
+| 3 | **Receita e Custo Total Internet por País** | Quais mercados geram mais receita e qual a margem por região? |
+| 4 | **Total de Vendas Internet por Sexo do Cliente** | Existe diferença de comportamento de compra entre os perfis de cliente? |
+
+Cada KPI possui um script SQL individual na pasta [`/sql`](./sql), com comentários explicando a lógica de cálculo e as tabelas de origem (ex: `FactInternetSales`, `DimProduct`, `DimProductCategory`, `DimDate`, `DimGeography`, `DimCustomer`).
+
+---
+
+## 🖼️ Preview do Dashboard
+
+![Preview do Dashboard](./docs/images/dashboard-overview.png)
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **SQL Server** — armazenamento e modelagem dos dados (AdventureWorks)
+- **T-SQL** — extração e transformação dos KPIs
+- **Excel + Power Query** — conexão com o banco, transformação e dashboard
+- **Tabelas Dinâmicas / Segmentações (Slicers)** — interatividade no dashboard
+- **Git & GitHub** — versionamento e portfólio
+
+---
+
+## 📂 Estrutura do Repositório
+
+```
+adventureworks-sql-excel-dashboard/
+├── sql/
+│   ├── 01_total_vendas_por_categoria.sql
+│   ├── 02_receita_mensal.sql
+│   ├── 03_receita_custo_por_pais.sql
+│   └── 04_vendas_por_sexo_cliente.sql
+├── excel/
+│   └── dashboard_internet_sales.xlsx
+├── docs/
+│   └── images/
+│       └── dashboard-overview.png
+├── README.md
+└── LICENSE
+```
+
+---
+
+## ⚙️ Como Reproduzir
+
+1. Baixe e restaure o banco **AdventureWorks** (versão OLTP ou DW) a partir do [repositório oficial da Microsoft](https://github.com/Microsoft/sql-server-samples/releases).
+2. Execute os scripts da pasta [`/sql`](./sql) no SQL Server Management Studio (SSMS) para validar os KPIs.
+3. Abra o arquivo [`dashboard_internet_sales.xlsx`](./excel) no Excel.
+4. Em **Dados > Consultas e Conexões**, atualize a string de conexão para apontar para a sua instância local do SQL Server.
+5. Clique em **Atualizar Tudo** para carregar os dados e explore o dashboard.
+
+---
+
+## 🔗 Dashboard Interativo
+
+---
+
+## 💡 Principais Insights
+
+- A categoria **[X]** representa a maior parcela da receita Internet, com destaque para o período de **[mês/estação]**.
+- O país **[Y]** apresenta a maior margem (receita − custo), enquanto **[Z]** tem o maior volume, mas menor margem.
+- O perfil de cliente **[M/F]** concentra **[X]%** das vendas online, sugerindo oportunidade de campanhas direcionadas.
+
+---
+
+## 👤 Autor
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center">
+      <b>Otávio Fabbro Machado</b><br/>
+      Bacharel em Ciências Sociais (FFLCH-USP)<br/>
+      Especialista em Ciência de Dados (ICMC-USP)<br/><br/>
+      <a href="https://www.linkedin.com/in/otaviofabbrodata">
+        <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white"/>
+      </a>
+      <a href="https://github.com/otaviofabbro">
+        <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"/>
+      </a>
+      <a href="mailto:otaviofabbro2@gmail.com">
+        <img src="https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white"/>
+      </a>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT — veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
+
