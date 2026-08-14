@@ -1,0 +1,17 @@
+# Arquivos temporários do Excel
+~$*.xlsx
+~$*.xls
+*.tmp
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Configurações locais do VS Code
+.vscode/
+
+# Backups e arquivos de banco (caso gere algum .bak localmente)
+*.bak
+*.mdf
+*.ldf
