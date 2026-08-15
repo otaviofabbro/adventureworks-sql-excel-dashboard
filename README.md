@@ -1,4 +1,5 @@
-# 📊 AdventureWorks Internet Sales Dashboard — SQL Server + Excel
+# 📊 Inteligência de Vendas Online: Dashboard de KPIs para Decisão Comercial
+Análise da performance de vendas do canal Internet (AdventureWorks) com SQL Server + Excel.
 
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
 ![Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
@@ -7,9 +8,7 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)
 ![Status](https://img.shields.io/badge/status-conclu%C3%ADdo-brightgreen?style=for-the-badge)
 
-> Projeto de análise de dados ponta a ponta: extração de KPIs de vendas via **T-SQL** no banco **AdventureWorks** e construção de um **dashboard interativo no Excel**, conectado diretamente ao SQL Server via Power Query.
-
-🔗 **[Ver Dashboard Interativo](#)**
+> Projeto que transforma dados brutos de vendas em um painel de indicadores comerciais capaz de apoiar decisões sobre catálogo, sazonalidade, mercados prioritários e perfil de cliente — do banco de dados ao dashboard, usando T-SQL e Excel + Power Query.
 
 ---
 
@@ -21,7 +20,6 @@
 - [Tecnologias Utilizadas](#️-tecnologias-utilizadas)
 - [Estrutura do Repositório](#-estrutura-do-repositório)
 - [Como Reproduzir](#️-como-reproduzir)
-- [Dashboard Interativo](#-dashboard-interativo)
 - [Principais Insights](#-principais-insights)
 - [Autor](#-autor)
 
