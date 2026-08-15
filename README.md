@@ -79,12 +79,13 @@ Cada KPI possui um script SQL individual na pasta [`/sql`](./sql), com comentár
 ```
 adventureworks-sql-excel-dashboard/
 ├── sql/
-│   ├── 01_total_vendas_por_categoria.sql
-│   ├── 02_receita_mensal.sql
-│   ├── 03_receita_custo_por_pais.sql
-│   └── 04_vendas_por_sexo_cliente.sql
+│   ├── VIEW_analise_KPIs.sql
+│   ├── receita_e_custo_internet_por_país.sql
+│   ├── receita_internet_por_mes_pedido.sql
+│   ├── total_vendas_internet_por_genero_cliente.sql
+│   └── vendas_internet_por_categoria.sql
 ├── excel/
-│   └── dashboard_internet_sales.xlsx
+│   └── Dashboard_AdventureWorks2025.xlsx
 ├── docs/
 │   └── images/
 │       └── dashboard-overview.png
