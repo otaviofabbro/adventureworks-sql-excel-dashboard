@@ -60,7 +60,7 @@ Cada KPI possui um script SQL individual na pasta [`/sql`](./sql), com comentár
 
 ## 🖼️ Preview do Dashboard
 
-![Preview do Dashboard](./docs/images/dashboard-overview.png)
+![Preview do Dashboard](./docs/images/dashboard_adventureworks.png)
 
 ---
 
