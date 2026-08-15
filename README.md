@@ -88,7 +88,7 @@ adventureworks-sql-excel-dashboard/
 │   └── Dashboard_AdventureWorks2025.xlsx
 ├── docs/
 │   └── images/
-│       └── dashboard-overview.png
+│       └── dashboard_adventureworks.png
 ├── README.md
 └── LICENSE
 ```
@@ -102,10 +102,6 @@ adventureworks-sql-excel-dashboard/
 3. Abra o arquivo [`dashboard_internet_sales.xlsx`](./excel) no Excel.
 4. Em **Dados > Consultas e Conexões**, atualize a string de conexão para apontar para a sua instância local do SQL Server.
 5. Clique em **Atualizar Tudo** para carregar os dados e explore o dashboard.
-
----
-
-## 🔗 Dashboard Interativo
 
 ---
 
