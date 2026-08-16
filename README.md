@@ -105,9 +105,9 @@ adventureworks-sql-excel-dashboard/
 
 ## 💡 Principais Insights
 
-- A categoria **[X]** representa a maior parcela da receita Internet, com destaque para o período de **[mês/estação]**.
-- O país **[Y]** apresenta a maior margem (receita − custo), enquanto **[Z]** tem o maior volume, mas menor margem.
-- O perfil de cliente **[M/F]** concentra **[X]%** das vendas online, sugerindo oportunidade de campanhas direcionadas.
+- A categoria **"Accessories"** representa a maior parcela da receita Internet, com destaque para o período de **Out-Dez e Jun-Ago**.
+- **"United States"** apresenta a maior margem (receita − custo) e maior volume, enquanto **"Canada"** tem menor volume e menor margem.
+- O perfil de cliente **"Masculino"** concentra **50,49%** das vendas online, sugerindo oportunidade de campanhas direcionadas, embora a diferença para o perfil **"Feminino"** seja proporcionalmente bem pequena.
 
 ---
 
