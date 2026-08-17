@@ -52,7 +52,7 @@ Praticar e demonstrar habilidades essenciais de análise de dados:
 | 3 | **Receita e Custo Total Internet por País** | Quais mercados geram mais receita e qual a margem por região? |
 | 4 | **Total de Vendas Internet por Sexo do Cliente** | Existe diferença de comportamento de compra entre os perfis de cliente? |
 
-Cada KPI foi validado primeiro por um script SQL individual na pasta /sql, etapa de análise exploratória que antecedeu a criação de uma VIEW consolidando todos os dados necessários para a análise no Excel.
+Cada KPI foi validado primeiro por um script SQL individual na pasta 'sql', etapa de análise exploratória que antecedeu a criação de uma VIEW consolidando todos os dados necessários para a análise no Excel.
 
 Essa VIEW serviu como fonte única de dados: no Excel, ela foi explorada com tabelas dinâmicas — o equivalente visual da cláusula GROUP BY do SQL — a partir das quais foram construídos os gráficos do dashboard.
 
