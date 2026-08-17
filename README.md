@@ -98,7 +98,7 @@ adventureworks-sql-excel-dashboard/
 ## ⚙️ Como Reproduzir
 
 1. Baixe e restaure o banco **AdventureWorksDW2025**  a partir do [repositório oficial da Microsoft](https://github.com/Microsoft/sql-server-samples/releases).
-2. Execute os scripts da pasta 'sql' no SQL Server Management Studio (SSMS) para validar os KPIs.
+2. Execute os scripts da pasta [sql](./sql) no SQL Server Management Studio (SSMS) para validar os KPIs.
 3. Abra o arquivo [Dashboard_AdventureWorks2025](./excel) no Excel.
 4. Em **Dados > Consultas e Conexões**, atualize a string de conexão para apontar para a sua instância local do SQL Server.
 5. Clique em **Atualizar Tudo** para carregar os dados e explore o dashboard.
