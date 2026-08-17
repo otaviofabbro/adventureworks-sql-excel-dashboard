@@ -78,16 +78,16 @@ Essa VIEW serviu como fonte única de dados: no Excel, ela foi explorada com tab
 
 ```
 adventureworks-sql-excel-dashboard/
-├── sql
+├── sql/
 │   ├── VIEW_analise_KPIs.sql
 │   ├── receita_e_custo_internet_por_país.sql
 │   ├── receita_internet_por_mes_pedido.sql
 │   ├── total_vendas_internet_por_genero_cliente.sql
 │   └── vendas_internet_por_categoria.sql
-├── excel
+├── excel/
 │   └── Dashboard_AdventureWorks2025.xlsx
-├── docs
-│   └── images
+├── docs/
+│   └── images/
 │       └── dashboard_adventureworks.png
 ├── README.md
 └── LICENSE
