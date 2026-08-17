@@ -52,7 +52,7 @@ Praticar e demonstrar habilidades essenciais de análise de dados:
 | 3 | **Receita e Custo Total Internet por País** | Quais mercados geram mais receita e qual a margem por região? |
 | 4 | **Total de Vendas Internet por Sexo do Cliente** | Existe diferença de comportamento de compra entre os perfis de cliente? |
 
-Cada KPI foi validado primeiro por um script SQL individual na pasta 'sql', etapa de análise exploratória que antecedeu a criação de uma VIEW consolidando todos os dados necessários para a análise no Excel.
+Cada KPI foi validado primeiro por um script SQL individual na pasta [sql](./sql), etapa de análise exploratória que antecedeu a criação de uma VIEW consolidando todos os dados necessários para a análise no Excel.
 
 Essa VIEW serviu como fonte única de dados: no Excel, ela foi explorada com tabelas dinâmicas — o equivalente visual da cláusula GROUP BY do SQL — a partir das quais foram construídos os gráficos do dashboard.
 
@@ -99,7 +99,7 @@ adventureworks-sql-excel-dashboard/
 
 1. Baixe e restaure o banco **AdventureWorksDW2025**  a partir do [repositório oficial da Microsoft](https://github.com/Microsoft/sql-server-samples/releases).
 2. Execute os scripts da pasta 'sql' no SQL Server Management Studio (SSMS) para validar os KPIs.
-3. Abra o arquivo 'Dashboard_AdventureWorks2025' no Excel.
+3. Abra o arquivo [Dashboard_AdventureWorks2025](./excel) no Excel.
 4. Em **Dados > Consultas e Conexões**, atualize a string de conexão para apontar para a sua instância local do SQL Server.
 5. Clique em **Atualizar Tudo** para carregar os dados e explore o dashboard.
 
