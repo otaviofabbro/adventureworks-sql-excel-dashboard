@@ -27,7 +27,7 @@ Análise da performance de vendas do canal Internet (AdventureWorks) com SQL Ser
 
 ## 📌 Sobre o Projeto
 
-Este projeto simula um cenário real de análise de negócio para uma empresa de varejo online, utilizando o banco de dados de exemplo **AdventureWorks** (Microsoft). O objetivo foi transformar dados brutos de vendas do canal *Internet Sales* em indicadores de negócio (KPIs) claros e acionáveis, apresentados em um dashboard interativo no Excel.
+Este projeto simula um cenário real de análise de negócio para uma empresa de varejo online, utilizando o banco de dados de exemplo **AdventureWorks** (Microsoft) para o ano de 2013. O objetivo foi transformar dados brutos de vendas do canal *Internet Sales* em indicadores de negócio (KPIs) claros e acionáveis, apresentados em um dashboard interativo no Excel.
 
 O fluxo do projeto segue uma pipeline típica de BI:
 
@@ -52,8 +52,9 @@ Praticar e demonstrar habilidades essenciais de análise de dados:
 | 3 | **Receita e Custo Total Internet por País** | Quais mercados geram mais receita e qual a margem por região? |
 | 4 | **Total de Vendas Internet por Sexo do Cliente** | Existe diferença de comportamento de compra entre os perfis de cliente? |
 
-Cada KPI possui um script SQL individual na pasta [`/sql`](./sql), com comentários explicando a lógica de cálculo e as tabelas de origem (ex: `FactInternetSales`, `DimProduct`, `DimProductCategory`, `DimDate`, `DimGeography`, `DimCustomer`).
+Cada KPI foi validado primeiro por um script SQL individual na pasta /sql, etapa de análise exploratória que antecedeu a criação de uma VIEW consolidando todos os dados necessários para a análise no Excel.
 
+Essa VIEW serviu como fonte única de dados: no Excel, ela foi explorada com tabelas dinâmicas — o equivalente visual da cláusula GROUP BY do SQL — a partir das quais foram construídos os gráficos do dashboard.
 ---
 
 ## 🖼️ Preview do Dashboard
@@ -95,9 +96,9 @@ adventureworks-sql-excel-dashboard/
 
 ## ⚙️ Como Reproduzir
 
-1. Baixe e restaure o banco **AdventureWorks** (versão OLTP ou DW) a partir do [repositório oficial da Microsoft](https://github.com/Microsoft/sql-server-samples/releases).
-2. Execute os scripts da pasta [`/sql`](./sql) no SQL Server Management Studio (SSMS) para validar os KPIs.
-3. Abra o arquivo [`dashboard_internet_sales.xlsx`](./excel) no Excel.
+1. Baixe e restaure o banco **AdventureWorksDW2025**  a partir do [repositório oficial da Microsoft](https://github.com/Microsoft/sql-server-samples/releases).
+2. Execute os scripts da pasta [`/sql`](.sql) no SQL Server Management Studio (SSMS) para validar os KPIs.
+3. Abra o arquivo [`dashboard_internet_sales.xlsx`](.excel) no Excel.
 4. Em **Dados > Consultas e Conexões**, atualize a string de conexão para apontar para a sua instância local do SQL Server.
 5. Clique em **Atualizar Tudo** para carregar os dados e explore o dashboard.
 
